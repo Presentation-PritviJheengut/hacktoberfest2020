@@ -1,0 +1,388 @@
+\documentclass[16pt,openbib]{beamer}
+
+\author{Pritvi Jheengut @zcoldplayer} %\thanks{\and}}
+\title{Hacktoberfest.and.Importance.of.Licensing}
+
+\subtitle{Importance of Licensing \\
+Hacking and Free Software \\
+Git!!!!!!!!  GitHub\\
+Hacktoberfest\\
+Digital Ocean\\
+}
+
+\subject{\#HacktoberFest 2020}
+
+\usepackage[size=custom,width=64,height=36,orientation=landscape,
+  scale=1.5]{beamerposter}
+
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% Eliminate errors such as
+% \LaTeX\ Font Warning: Font shape `T1/cmss/m/n' in size <4> not available
+% \LaTeX\ Font Warning: Size substitutions with differences up to 1.0pt
+
+\usepackage{hyperref}
+\hypersetup{
+  pdfcreator=pdflatex,
+  pdffitwindow=true
+}
+
+\usepackage{verbatim}
+
+\usepackage[french,UKenglish]{babel}
+\usepackage{listings}
+
+% \usepackage{pgf}
+% \usepackage{xy}[all]
+\usepackage{graphicx}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows,positioning}
+
+\usepackage{smartdiagram}
+
+% \usepackage{booktabs}
+
+\mode<presentation>
+
+  \useoutertheme{infolines}
+
+  \definecolor{background}{HTML}{183D5D}
+  \definecolor{text}{HTML}{9C4668}
+  \definecolor{textlight}{HTML}{FD88E0}
+  \definecolor{textbackground}{HTML}{072540}
+  \definecolor{structure}{HTML}{93C2DB}
+  
+  \setbeamercolor{alerted text}
+  {bg=textbackground!80!,fg=textlight}
+                 
+  \setbeamercolor{block title}
+  {bg=textbackground,fg=textlight}
+
+  \setbeamercolor{block body}
+  {bg=background,fg=textlight}
+
+  \setbeamercolor{frametitle}
+  {parent=textbackground,fg=text}
+
+  \setbeamercolor{normal text}
+  {bg=textbackground,fg=text}
+
+  \setbeamercolor{structure}
+  {bg=background,fg=structure}
+  
+  \setbeamercolor*{palette primary}
+  {use=structure,fg=textlight,bg=textbackground!80!}
+
+  \setbeamercolor*{palette secondary}
+  {use=structure,fg=textlight,bg=textbackground!90!}
+
+  \setbeamercolor*{palette tertiary}
+  {use=structure,fg=textlight,bg=textbackground!80!}
+
+  \setbeamercolor{Title bar}
+  {fg=text!25!}
+
+  \setbeamercolor{titlelike}
+  {parent=background,bg=background,fg=structure}
+
+  \setbeamercovered{transparent,dynamic}
+
+  \setbeamersize{text margin left=8cm,text margin right=2cm}
+
+  \setbeamertemplate{blocks}[rounded][shadow=true]
+
+  \setbeamertemplate{background canvas}
+  [top=background!80!,middle=background!95!,bottom=background]
+
+
+% \mode<handout>{\beamertemplatesolidbackgroundcolor{black!50}}
+
+\mode<all>
+
+\begin{document}
+
+\date[Introduction to Hacktoberfest]{Hacktoberfest - 23 October 2020}
+
+\frame{
+  \frametitle{}
+
+  \huge
+  \maketitle
+
+}
+
+\section{Intellectual Property Alert : Overview of the Copyleft
+  Licenses}
+
+\frame{
+  \frametitle{Copyleft License Attribution}
+
+  Made with love using beamer, \LaTeX\ and git.\\
+  You can view at \href{https://github.com/Presentation-PritviJheengut/hacktoberfest2020}
+  {Hacktoberfest 2020}
+
+  \begin{alertblock}{This work is licensed under the \LaTeX\ Project
+      Public License.}
+    To view a copy of this license, visit \\
+    \url{https://www.latex-project.org/lppl.txt}
+  \end{alertblock}
+
+  \begin{alertblock}{This work is licensed under the Creative
+      Commons Attribution-ShareAlike 4.0 International License.}
+    To view a copy of this license, visit \\
+    \href{http://creativecommons.org/licenses/by-sa/4.0/}{CC BY-SA}
+    or \\
+
+    send a letter to \\
+    Creative Commons, \\
+    PO Box 1866, \\
+    Mountain View, \\
+    CA 94042, \\
+    USA. \\
+  \end{alertblock}
+
+}
+
+\section{Greetings}
+\subsection{About the Author}
+
+\frame{
+  \frametitle{Who Am I}
+
+  \large
+
+  \href{http://slackware.com/}{Geek@Slackware}
+
+  \href{https://twitter.com/zcoldplayer}{twitter @zcoldplayer}
+
+  \href{https://xmail.net/z.coldplayer}{zcoldplayer xmail Website}
+
+  \href{http://metservice.intnet.mu/}{Work
+    : SMTT@Meteorological.Services.mu}
+
+  Active in many User group LUGM, MMC, MSCC, FECM, GDG\_MU \\
+  and several other hackathons
+
+  Passionate about how and why things work.
+
+  Fervour Advocate of Free Libre and Open Source Software.
+
+}
+
+\subsection{About the Audience}
+
+\frame{
+  \frametitle{Who are you}
+
+  \large
+
+  \begin{block}{Would you mind tell me who you are?}
+    Some hints:
+  \end{block}
+
+  \begin{enumerate}
+  \item @twitter\_handle
+  \item where you work
+  \item email you want to share
+  \item Hobbies
+  \item purpose and expectations of this session
+  \end{enumerate}
+
+}
+
+\section{Community Groups in Mauritius}
+
+\frame{
+  \frametitle{Community Groups in Mauritius}
+
+  \begin{block}{Healthy growth of Community Groups in Mauritius}
+    This turn of the century has seen an uprising of Community groups
+    in Mauritius in the field of the Digital World. The diversity has
+    helped the exchange and sharing of innovative ideas, experience,
+    bleeding edge technology, upcoming events, conferences in the
+    Digital Island of the Republic of Mauritius.
+  \end{block}
+
+  This is a list of some of the active communities in Digital
+  Mauritius.
+
+  \begin{itemize}
+  \item Linux User Group Meta, LUGM
+  \item Mauritius Software Craftsmanship Community, MSCC
+  \item Mauritius Makers Community, MMC
+  \item Front-End Coders Mauritius, FECM
+  \item PHP User Group of Mauritius, phpMauritiusUG
+  \item Symfonymu
+  \item Google Developers Group Mauritius, GDG\_M
+  \item Digital Marketing Mauritius
+  \end{itemize}
+
+}
+      
+\frame{
+  \frametitle{Dennis Ritchie}
+ 
+ \large 
+ 
+ Dennis MacAlistair Ritchie was an American computer scientist.
+ 
+ He created the C programming language and, with long-time 
+ colleague Ken Thompson,
+ 
+ the Unix operating system.
+ 
+ The 12th of october 2020 marks his 9th death anniversary. 
+ 
+ A little tribute to him.
+  }
+  
+\frame{
+  \frametitle{Questions}
+
+\huge Questions !!  
+  }
+  
+
+\frame{
+  \frametitle{About YOUR experience}
+
+  \Huge
+  
+  Have you ever participated in \#Hacktoberfest
+
+}  
+
+\frame{
+  \frametitle{Hacking and Free Software }
+  
+  \Huge Hacking and Free Software have always worked together since
+  the Dawn of computing
+  
+  Do you Hack ?
+  }
+  
+
+\frame{
+  \frametitle{Hacking and Free Software }
+  
+  \Huge 
+  
+  To hack means to be very good at something but the work to be done
+  is not necessarily a quality work.
+  
+  }
+  
+\frame{
+  \frametitle{Hacking and Free Software }
+  
+  \Huge 
+  
+  In essence, hacking is adding features to something which the 
+  original author never thought about.
+  
+  }
+  
+\frame{
+  \frametitle{Free Software }
+  
+  \Huge  Free Software has more emphasis upon end users
+  
+  Any change done to Free Software has to be published.
+
+  }
+  
+\frame{
+  \frametitle{Open Source Software }
+
+  \Huge Open Source Software  has more emphasis upon developers
+  }
+
+\frame{
+  \frametitle{Do you License your creations?}
+
+  \Huge Do you License your creations ?
+  
+  What type of license do you usually use ?
+  
+  }
+  
+    
+\frame{
+  \frametitle{Git!!!!!!!!! }
+
+  \Huge A free source code versioning content system used to manage
+  patches.
+    
+  }
+  
+\frame{
+  \frametitle{GitHub - part 1}
+  
+  \huge
+  
+  \href{https://github.com}
+  {GitHub provides hosting for software development version control
+  using Git.}
+  
+  what are your favourite Free and Open Source project??
+  
+  }
+  
+\frame{
+  \frametitle{GitHub - part 2}
+  
+  \huge
+
+  Last year Github was acquired by and is now subsidiary a Microsoft
+  while offering all management functionality of Git as well as
+  adding its own features but they are neither Free nor Open Source
+  software but it is free of cost to use to a certain limit.
+  
+  }
+  
+\frame{
+  \frametitle{GitHub - part 3}
+  
+  \huge
+  
+  GitHub provides access control and several collaboration features 
+  such as bug tracking, feature requests, task management, and 
+  wikis for every project.
+  
+  }
+  
+\frame{
+  \frametitle{GitHub -- Be social}
+  
+  \Huge
+  
+  \href{https://help.github.com/en/articles/be-social}
+  {You can interact with people, repositories, and organisations on
+  GitHub. See what others are working on and who they're connecting 
+  with from your personal dashboard.}
+  
+  }
+  
+\frame{
+  \frametitle{what is Hacktoberfest}
+  
+  \Huge
+  
+  \href{https://hacktoberfest.digitalocean.com}
+  {Hacktoberfest is an annual month-long event held in the month of
+    October}  \href{https://digitalocean.com}{
+    organised by Digital Ocean}
+  \href{https://dev.to}{ and Dev.to .}
+  
+  }
+  
+      
+\frame{
+  \frametitle{Questions}
+  \Huge Questions !!  
+  }
+  
+\end{document}
